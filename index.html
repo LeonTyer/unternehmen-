@@ -1,0 +1,118 @@
+<!DOCTYPE HTML> 
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grün & Klar - Kalde Objektbetreuung & Gartenpflege </title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <!--Logo links-->
+
+        <div class="hero-logo">
+            <img src="IMG/Kalde-Logo.png" alt="Firmenlogo">
+        </div>
+
+        <div class="hero-content">
+            <h1>Objektbetreuung Kalde</h1>
+            <p>Zuverlässige Objektbetreuung & Gartenpflege</p>
+            <a href="#leistungen" class="cta-button">Meine Leistungen</a>
+            <a href="#kontakt" class="cta-button">Kontakt</a>
+        </div>
+    </header>
+<!--Über Uns-->
+<section id="ueber-uns" class="ueber-uns">
+    <h2>Über mich</h2>
+    <p>
+        Als zuverlässiger Partner für Objektbetreuung stehe ich für ein Rundum-Sorglos-Paket, das sowohl Eigentümer als auch Mieter gleichermaßen zufriedenstellt. Mit meiner Arbeit schaffe ich nicht nur<strong> saubere</strong> und<strong> gepflegte</strong> Treppenhäuser, sondern eine vertrauensvolle Verbindung zwischen allen Beteiligten.<strong>Freundlich, verbindlich und gründlich</strong> – so setze ich mich für das Wohl Ihrer Immobilie ein.
+    </p>
+</section>
+<!--LEISTUNGEN-->
+<section id="leistungen" class="leistungen">
+  <h2>Meine Leistungen</h2>
+  <div class="leistungen-container">
+
+    <div class="leistung">
+      <i class="fa-solid fa-leaf"></i>
+      <h3>Gartenpflege</h3>
+      <p>Ob Rasenpflege, Heckenschnitt oder die Gestaltung von Grünflächen – gemeinsam sorge ich dafür, dass Ihre Außenanlagen ebenso gepflegt sind wie Ihr Gebäude. So haben Sie alles aus einer Hand und können sich auf erstklassige Ergebnisse verlassen.</p>
+    </div>
+
+    <div class="leistung">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <h3>Hausmeisterservice</h3>
+      <p>Von der Wartung über kleine Reparaturen bis hin zur Pflege der Außenanlagen: Mein Hausmeisterservice ist für jede Aufgabe gerüstet. Mit Empathie und Aufmerksamkeit kümmere ich mich darum, dass alles reibungslos funktioniert. Jeder Auftrag wird mit größter Sorgfalt ausgeführt, um den Wert Ihrer Immobilie zu erhalten und das Leben Ihrer Mieter zu erleichtern.</p>
+    </div>
+
+    <div class="leistung">
+      <i class="fa-solid fa-broom"></i>
+      <h3>Reinigung</h3>
+      <p>Ein sauberes Treppenhaus sorgt für Wohlfühlatmosphäre und hinterlässt einen bleibenden Eindruck. Bei meiner Treppenhausreinigung kommen ausschließlich biologisch abbaubare und vegane Reinigungsmittel von Hakka zum Einsatz. Denn Umweltschutz und Nachhaltigkeit liegen mir am Herzen – für Sie, Ihre Mieter und unsere Natur.</p>
+    </div>
+
+    <div class="leistung">
+      <i class="fa-solid fa-handshake"></i>
+      <h3>Qualität und Vertrauen</h3>
+      <p>Als Mitglied der Handwerkskammer Lüneburg Stade stehe ich für höchste Qualität und handwerkliche Kompetenz. Mit meiner freundlichen und verbindlichen Art garantiere ich eine Zusammenarbeit, die auf Vertrauen und Zuverlässigkeit basiert. Ihre Zufriedenheit steht bei mir immer an erster Stelle.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="nachhaltigkeit" class="nachhaltigkeit">
+    <div class="nachhaltigkeit-container">
+        <div class="nachhaltigkeit">
+        <i class="fa-solid fa-seedling"></i>
+        <h3>Nachhaltigkeit</h3>
+        <p>Für jedes Projekt, das ich übernehme, gebe ich nicht nur mein Bestes für Ihre Immobilie – ich gebe auch etwas an die Natur zurück. Für jeden Auftrag wird jeden Monat ein Baum im Harz oder in Schleswig Holstein mit der Stiftung Unternehmen Wald gepflanzt – über die gesamte Zeit der Zusammenarbeit hinweg. So schaffen wir gemeinsam eine grünere und lebenswerte Zukunft.</p>
+        </div>
+    </div>
+</section> 
+
+<!--Kontakt-->
+<section id="kontakt" class="kontakt">
+    <h2>Kontakt</h2>
+    <p>☎️01726548937 <br> 📧 info@kalde-objektbetreuung.de</p>
+
+    <form action="#" method="post" class="kontakt-formular">
+        <input type="text" name="name" placeholder="Ihr Name" required>
+        <input type="email" name="email" placeholder="Ihre Email" required>
+        <textarea name="nachicht" rows="5" placeholder="Ihre Nachicht" required></textarea>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i> Absenden</button>
+    </form>
+</section>
+
+<!--FOOTER-->
+<footer>
+    <div class="footer-container">
+        <!--Bild Im Footer-->
+        <img src="IMG/Handwekrskammer.jpg" alt="Handelskammer" class="footer-logo">
+    </div>
+    <div class="footer-right">
+        <p>© 2025 Kalde Objektbetreuung & Gartenpflege</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("scroll", () => {
+        const leistungen = document.querySelectorAll(".leistung");
+        leistungen.forEach(box => {
+            const position = box.getBoundingClientRect().top;
+            if (position < window.innerHeight - 100) {
+                box.classList.add("visible");
+            }
+        });
+    });
+</script>
+
+
+</body>
+</html>
